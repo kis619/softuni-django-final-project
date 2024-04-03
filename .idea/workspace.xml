@@ -5,24 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef332e7a-0011-4f49-be7b-247ed3879e50" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/final_exam/accounts/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/final_exam/accounts/templatetags/custom_filters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/final_exam/accounts/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/final_exam/home/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/final_exam/home/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/accounts/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/accounts/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/softuni-django-final-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/softuni-django-final-project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_exam/accounts/managers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/registration/password_change.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/registration/password_change_done.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/accounts/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/accounts/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/accounts/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/accounts/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/accounts/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -138,7 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1711875193897</updated>
       <workItem from="1711875194909" duration="6988000" />
-      <workItem from="1712085419135" duration="13022000" />
+      <workItem from="1712085419135" duration="15316000" />
     </task>
     <servers />
   </component>
@@ -158,7 +147,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/final_exam/accounts/views.py</url>
-          <line>33</line>
+          <line>23</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
