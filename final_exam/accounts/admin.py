@@ -2,10 +2,6 @@ from django.contrib import admin
 from django.contrib.auth import get_user_model
 from django.contrib.auth.admin import UserAdmin
 
-from final_exam.accounts.forms import (
-    LetUsTalkUserChangeForm,
-    LetUsTalkUserCreationForm
-)
 from final_exam.accounts.models import LetUsTalkUser
 
 UserModel = get_user_model()
@@ -15,17 +11,17 @@ UserModel = get_user_model()
 @admin.register(LetUsTalkUser)
 class LetUsTalkUserAdmin(UserAdmin):
     model = UserModel
-    # add_form = LetUsTalkUserCreationForm
-    # form = LetUsTalkUserChangeForm
+    # add_form = LetUsTalkUserCreationForm #TODO: what are these for
+    # form = LetUsTalkUserChangeForm #TODO: what are these for
     list_display = ('pk', 'email', 'is_staff', 'is_superuser')
     search_fields = ('email',)
     ordering = ('pk',)
 
     fieldsets = (
-            (None, {'fields': ('email', 'password')}),
-        #     ('Personal info', {'fields': ()}),
-        #     ('Permissions', {'fields': ('is_active', 'is_staff', 'groups', 'user_permissions')}),
-        #     # ('Important dates', {'fields': ('last_login',)}),
+        (None, {'fields': ('email', 'password')}),
+        ('Personal info', {'fields': ()}),
+        ('Permissions', {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
+        ('Important dates', {'fields': ('last_login',)}),
     )
     add_fieldsets = (
         (

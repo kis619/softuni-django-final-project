@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load custom_filters %}
+{% block content %}
+    <h2>Sign up</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.email|placeholder:"Email" }}
+        {{ form.email.errors }}
+        {{ form.password1|placeholder:"Password" }}
+        {{ form.password1.errors }}
+        {{ form.password2|placeholder:"Password confirmation" }}
+        {{ form.password2.errors }}
+        <button type="submit">Sign up</button>
+    </form>
+{% endblock %}
