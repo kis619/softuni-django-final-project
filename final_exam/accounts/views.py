@@ -1,7 +1,7 @@
 from django.contrib.auth import get_user_model
 from django.contrib.auth.views import LoginView, LogoutView
 from django.urls import reverse_lazy
-from django.views.generic import CreateView
+from django.views.generic import CreateView, DetailView
 
 from final_exam.accounts.forms import LetUsTalkUserCreationForm, LetUsTalkUserLoginForm
 
@@ -23,3 +23,12 @@ class LutLoginView(LoginView):
 
 class LutLogoutView(LogoutView):
     pass
+
+
+class ProfileDetailView(DetailView):
+    model = UserModel
+    template_name = 'accounts/profile_detail.html'
+    context_object_name = 'profile'
+
+    def get_object(self, queryset=None):
+        return self.request.user.letustalkuserprofile  # TODO figure out whether to override the method

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile{% endblock title %}
+
+{% block content %}
+    <h2>Profile Details</h2>
+    <p>Email: {{ profile.user.email|default:"Not provided" }}</p>
+    <p>First Name: {{ profile.first_name|default:"Not provided" }}</p>
+    <p>Last Name: {{ profile.last_name|default:"Not provided" }}</p>
+{#    <p>Avatar: <img src="{{ profile.avatar.url|default:"/path/to/default/avatar.png" }}" alt="Avatar" /></p>#}
+    <p>Bio: {{ profile.bio|default:"Not provided" }}</p>
+    <p>Birth Date: {{ profile.birth_date|default:"Not provided" }}</p>
+{% endblock content %}
