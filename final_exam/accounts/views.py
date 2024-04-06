@@ -1,9 +1,10 @@
 from django.contrib.auth import get_user_model
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView, LogoutView
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, DetailView
+from django.views.generic import CreateView, DetailView, UpdateView
 
-from final_exam.accounts.forms import LetUsTalkUserCreationForm, LetUsTalkUserLoginForm
+from final_exam.accounts.forms import LetUsTalkUserCreationForm, LetUsTalkUserLoginForm, LetUsTalkUserProfileForm
 
 UserModel = get_user_model()
 
@@ -31,4 +32,17 @@ class ProfileDetailView(DetailView):
     context_object_name = 'profile'
 
     def get_object(self, queryset=None):
-        return self.request.user.letustalkuserprofile  # TODO figure out whether to override the method
+        return self.request.user.letustalkuserprofile
+
+
+class ProfileUpdateView(LoginRequiredMixin, UpdateView):
+    model = UserModel
+    form_class = LetUsTalkUserProfileForm
+    template_name = 'accounts/profile_update.html'
+    context_object_name = 'profile'
+
+    def get_object(self, queryset=None):
+        return self.request.user.letustalkuserprofile
+
+    def get_success_url(self):
+        return reverse_lazy('profile_detail')

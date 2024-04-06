@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef332e7a-0011-4f49-be7b-247ed3879e50" name="Changes" comment="Added Profile details View">
-      <change afterPath="$PROJECT_DIR$/final_exam/accounts/migrations/0003_alter_letustalkuserprofile_avatar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
+    <list default="true" id="ef332e7a-0011-4f49-be7b-247ed3879e50" name="Changes" comment="setup media and static files structure; displaying styled image on profile_details now">
+      <change afterPath="$PROJECT_DIR$/templates/accounts/profile_update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/accounts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accounts/profile_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/profile_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/accounts/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/accounts/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +135,7 @@
       <workItem from="1711875194909" duration="6988000" />
       <workItem from="1712085419135" duration="16403000" />
       <workItem from="1712133296458" duration="3000" />
-      <workItem from="1712395748416" duration="8472000" />
+      <workItem from="1712395748416" duration="10056000" />
     </task>
     <task id="LOCAL-00001" summary="Added Profile details View">
       <option name="closed" value="true" />
@@ -148,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712405776538</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="setup media and static files structure; displaying styled image on profile_details now">
+      <option name="closed" value="true" />
+      <created>1712409142722</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712409142722</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +164,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Profile details View" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Profile details View" />
+    <MESSAGE value="setup media and static files structure; displaying styled image on profile_details now" />
+    <option name="LAST_COMMIT_MESSAGE" value="setup media and static files structure; displaying styled image on profile_details now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

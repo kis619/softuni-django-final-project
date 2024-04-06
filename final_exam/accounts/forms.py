@@ -1,6 +1,8 @@
+from django import forms
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import UserChangeForm, UserCreationForm, AuthenticationForm
-from django import forms
+
+from final_exam.accounts.models import LetUsTalkUserProfile
 
 UserModel = get_user_model()
 
@@ -23,3 +25,9 @@ class LetUsTalkUserLoginForm(AuthenticationForm):
         strip=False,
         widget=forms.PasswordInput(attrs={'autocomplete': 'current-password'}),
     )
+
+
+class LetUsTalkUserProfileForm(forms.ModelForm):
+    class Meta:
+        model = LetUsTalkUserProfile
+        fields = ['first_name', 'last_name', 'avatar', 'bio', 'birth_date']

@@ -4,12 +4,12 @@
 {% block title %}Profile{% endblock title %}
 
 {% block content %}
-    <h2>Profile Details</h2>
+    <h2>Profile Details</h2> <a href="{% url 'profile_edit' %}">Edit Profile</a>
     <p>Email: {{ profile.user.email|default:"Not provided" }}</p>
     <p>First Name: {{ profile.first_name|default:"Not provided" }}</p>
     <p>Last Name: {{ profile.last_name|default:"Not provided" }}</p>
     <p>Avatar:
-        <img src="{{ profile.get_avatar_url}}" class="responsive-image" alt="Avatar" />
+        <img src="{{ profile.get_avatar_url }}" class="responsive-image" alt="Avatar"/>
     </p>
     <p>Bio: {{ profile.bio|default:"Not provided" }}</p>
     <p>Birth Date: {{ profile.birth_date|default:"Not provided" }}</p>
