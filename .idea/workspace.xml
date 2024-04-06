@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef332e7a-0011-4f49-be7b-247ed3879e50" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/final_exam/accounts/managers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/accounts/registration/password_change.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/accounts/registration/password_change_done.html" afterDir="false" />
+    <list default="true" id="ef332e7a-0011-4f49-be7b-247ed3879e50" name="Changes" comment="Added Profile details View">
+      <change afterPath="$PROJECT_DIR$/final_exam/accounts/migrations/0003_alter_letustalkuserprofile_avatar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/accounts/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/accounts/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_exam/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/accounts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accounts/profile_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/profile_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +27,7 @@
       <list>
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -53,7 +55,8 @@
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/krissi/projects/softuni-django-final-project",
+    "last_opened_file_path": "/home/krissi/projects/softuni-django-final-project/static/images",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,12 +66,18 @@
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "sqlite"
+      "sqlite",
+      "postgresql"
     ]
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/images" />
+      <recent name="$PROJECT_DIR$/static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/images" />
       <recent name="$PROJECT_DIR$/templates/home" />
       <recent name="$PROJECT_DIR$/final_exam" />
     </key>
@@ -127,8 +136,19 @@
       <option name="presentableId" value="Default" />
       <updated>1711875193897</updated>
       <workItem from="1711875194909" duration="6988000" />
-      <workItem from="1712085419135" duration="15316000" />
+      <workItem from="1712085419135" duration="16403000" />
+      <workItem from="1712133296458" duration="3000" />
+      <workItem from="1712395748416" duration="8472000" />
     </task>
+    <task id="LOCAL-00001" summary="Added Profile details View">
+      <option name="closed" value="true" />
+      <created>1712405776538</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712405776538</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +157,10 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Profile details View" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Profile details View" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -144,11 +168,6 @@
           <url>file://$PROJECT_DIR$/venv/lib/python3.10/site-packages/django/contrib/admin/options.py</url>
           <line>836</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/final_exam/accounts/views.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
