@@ -1,13 +1,17 @@
 {% extends "base.html" %}
-
+{% load static %}
+{% block extra_head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+{% endblock extra_head %}
 {% block title %}Posts - My Website{% endblock %}
 
 {% block content %}
     <section>
         <a href="{% url 'post_create' %}">Add your thoughts</a>
         <h2>All Thoughts</h2>
-       {% include 'fragments/_posts_loop.html' %}
-
+        <div class="posts-list">
+            {% include 'fragments/_posts_loop.html' %}
+        </div>
 
         <div class="pagination">
             <span class="step-links">

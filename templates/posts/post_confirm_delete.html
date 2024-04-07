@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Delete Post</h2>
+  <form method="POST">
+  {% csrf_token %}
+    <p>Are you sure you want to delete this post: {{ post.title }}?</p>
+    <button type="submit">Yes, delete</button>
+  </form>
+    <a href="{% url 'profile_detail' %}">No, take me back!</a>
+{% endblock %}

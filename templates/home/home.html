@@ -9,13 +9,13 @@
 
 {% block content %}
     <section>
-        <h2>Welcome to the Home Page</h2>
-        <p>This is a simple home page template that extends base.html.</p>
+        <h2>Let us Talk</h2>
         <p>
             Share your thoughts with the world.
             Don't be brief - at lest 2000 words.
         </p>
         <a href="{% url 'posts_list' %}">Start talking </a>
+        <p>The latest thoughts: </p>
         <div>
             {% include 'fragments/_posts_loop.html' %}
         </div>

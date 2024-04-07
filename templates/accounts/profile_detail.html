@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block extra_head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+{% endblock extra_head %}
 
 {% block title %}Profile{% endblock title %}
 
@@ -15,4 +18,23 @@
     </p>
     <p>Bio: {{ profile.bio|default:"Not provided" }}</p>
     <p>Birth Date: {{ profile.birth_date|default:"Not provided" }}</p>
+
+    <div>
+        <h3>Posts</h3>
+        {% for post in posts %}
+
+            <div class="post">
+                <h4>{{ post.title }}</h4>
+                {#                <p>{{ post.content }}</p>#}
+                <p>Created at: {{ post.created_at }}</p>
+                <p>Updated at: {{ post.updated_at }}</p>
+                <p>Author: {{ post.author }}</p>
+                <p>Tags: {{ post.tags.all|join:", " }}</p>
+                <p>Comments: {{ post.comments.all|length }}</p>
+                <p>Likes: {{ post.likes.all|length }}</p>
+                <a href="{% url 'post_detail' post.id %}">Go to Post</a>
+                <a href="{% url 'post_delete' post.id %}">Delete</a>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock content %}
