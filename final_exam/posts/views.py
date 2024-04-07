@@ -1,9 +1,10 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponseForbidden
 from django.urls import reverse_lazy
 from django.views.generic import ListView, CreateView, DeleteView, DetailView
 
 from .form import PostForm
-from .models import Post
+from .models import Post, Comment
 
 
 class PostListView(ListView):
@@ -19,6 +20,9 @@ class PostDetailView(DetailView):
     template_name = 'posts/post_detail.html'
     context_object_name = 'post'
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        return context
 
 class PostCreateView(CreateView):
     model = Post
@@ -43,3 +47,16 @@ class PostDeleteView(DeleteView):
 
     def post(self, request, *args, **kwargs):
         return self.delete(request, *args, **kwargs)
+
+
+class CommentCreateView(LoginRequiredMixin, CreateView):
+    model = Comment
+    fields = ['content']
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        form.instance.post_id = self.kwargs['post_id']
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse_lazy('post_detail', kwargs={'pk': self.kwargs['post_id']})
