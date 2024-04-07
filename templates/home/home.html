@@ -11,5 +11,7 @@
             Don't be brief - at lest 2000 words.
         </p>
         <a href="{% url 'posts_list' %}">Start talking </a>
+       {% include 'fragments/_posts_loop.html' %}
+
     </section>
 {% endblock %}

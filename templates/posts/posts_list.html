@@ -4,16 +4,9 @@
 
 {% block content %}
     <section>
-        <h2>All Posts</h2>
-        {% for post in posts %}
-            <div class="post">
-                <h3>{{ post.title }}</h3>
-                <p>{{ post.content|truncatewords:30 }}</p>
-                <a href="{% url 'post_detail' post.id %}">Read More</a>
-            </div>
-        {% empty %}
-            <p>No posts yet.</p>
-        {% endfor %}
+        <a href="{% url 'post_create' %}">Add your thoughts</a>
+        <h2>All Thoughts</h2>
+       {% include 'fragments/_posts_loop.html' %}
 
 
         <div class="pagination">
