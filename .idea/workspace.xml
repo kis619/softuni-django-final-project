@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef332e7a-0011-4f49-be7b-247ed3879e50" name="Changes" comment="setup media and static files structure; displaying styled image on profile_details now">
-      <change afterPath="$PROJECT_DIR$/final_exam/posts/form.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/final_exam/posts/migrations/0002_alter_post_content.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/fragments/_posts_loop.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/posts/post_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_exam/accounts/migrations/0004_alter_letustalkuser_managers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/posts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/posts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/posts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/posts/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/posts/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_exam/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/posts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/post/posts_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/posts/posts_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,13 +47,17 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "Django Server.softuni-django-final-project.executor": "Run",
+    "Python tests.Python tests for posts.tests.TestPostDeleteView.test_successfully_deletes_post_if_user_is_author.executor": "Run",
+    "Python tests.Python tests for posts.tests.test_PostDeleteView_returns_HttpResponseNotFound_if_post_does_not_exist.executor": "Run",
+    "Python tests.Python tests for posts.tests.test_PostDeleteView_successfully_deletes_post_if_user_is_author.executor": "Run",
+    "Python tests.Python tests in tests.py.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/krissi/projects/softuni-django-final-project",
+    "last_opened_file_path": "/home/krissi/Work/turbit",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -85,7 +85,7 @@
       <recent name="$PROJECT_DIR$/templates/home" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Python tests for posts.tests.TestPostDeleteView.test_successfully_deletes_post_if_user_is_author">
     <configuration name="softuni-django-final-project" type="Python.DjangoServer" factoryName="Django server">
       <module name="softuni-django-final-project" />
       <option name="ENV_FILES" value="" />
@@ -121,6 +121,95 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for posts.tests.TestPostDeleteView.test_returns_HttpResponseNotFound_if_post_does_not_exist" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="softuni-django-final-project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/final_exam" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;posts.tests.TestPostDeleteView.test_returns_HttpResponseNotFound_if_post_does_not_exist&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for posts.tests.TestPostDeleteView.test_successfully_deletes_post_if_user_is_author" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="softuni-django-final-project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/final_exam" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;posts.tests.TestPostDeleteView.test_successfully_deletes_post_if_user_is_author&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for posts.tests.test_PostDeleteView_returns_HttpResponseNotFound_if_post_does_not_exist" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="softuni-django-final-project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/final_exam" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;posts.tests.test_PostDeleteView_returns_HttpResponseNotFound_if_post_does_not_exist&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for posts.tests.test_PostDeleteView_successfully_deletes_post_if_user_is_author" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="softuni-django-final-project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/final_exam" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;posts.tests.test_PostDeleteView_successfully_deletes_post_if_user_is_author&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in tests.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="softuni-django-final-project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/final_exam" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/final_exam/posts/tests.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for posts.tests.TestPostDeleteView.test_successfully_deletes_post_if_user_is_author" />
+        <item itemvalue="Python tests.Python tests for posts.tests.TestPostDeleteView.test_returns_HttpResponseNotFound_if_post_does_not_exist" />
+        <item itemvalue="Python tests.Python tests in tests.py" />
+        <item itemvalue="Python tests.Python tests for posts.tests.test_PostDeleteView_successfully_deletes_post_if_user_is_author" />
+        <item itemvalue="Python tests.Python tests for posts.tests.test_PostDeleteView_returns_HttpResponseNotFound_if_post_does_not_exist" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -142,7 +231,7 @@
       <workItem from="1712133296458" duration="3000" />
       <workItem from="1712395748416" duration="13170000" />
       <workItem from="1712476528750" duration="147000" />
-      <workItem from="1712476686065" duration="3069000" />
+      <workItem from="1712476686065" duration="5868000" />
     </task>
     <task id="LOCAL-00001" summary="Added Profile details View">
       <option name="closed" value="true" />
@@ -184,5 +273,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/softuni_django_final_project$.coverage" NAME=" Coverage Results" MODIFIED="1712482370300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/final_exam" />
   </component>
 </project>

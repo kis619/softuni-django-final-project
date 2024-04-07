@@ -1,5 +1,6 @@
+from django.http import HttpResponseForbidden
 from django.urls import reverse_lazy
-from django.views.generic import ListView, CreateView
+from django.views.generic import ListView, CreateView, DeleteView
 
 from .form import PostForm
 from .models import Post
@@ -22,3 +23,14 @@ class PostCreateView(CreateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
+
+
+class PostDeleteView(DeleteView):
+    model = Post
+    success_url = reverse_lazy('posts_list')
+
+    def delete(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        if self.object.author != request.user:
+            return HttpResponseForbidden()
+        return super().delete(request, *args, **kwargs)
