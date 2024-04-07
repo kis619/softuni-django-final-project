@@ -1,0 +1,14 @@
+.post {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: rgba(82, 112, 53, 0.18);
+    margin: 1em;
+    display: inline-block;
+}
+
+.post:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}

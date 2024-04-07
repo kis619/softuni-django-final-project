@@ -1,4 +1,9 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block extra_head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+{% endblock extra_head %}
 
 {% block title %}Home - My Website{% endblock %}
 
@@ -11,7 +16,9 @@
             Don't be brief - at lest 2000 words.
         </p>
         <a href="{% url 'posts_list' %}">Start talking </a>
-       {% include 'fragments/_posts_loop.html' %}
+        <div>
+            {% include 'fragments/_posts_loop.html' %}
+        </div>
 
     </section>
 {% endblock %}
