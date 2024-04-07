@@ -1,0 +1,9 @@
+<p>{{ thread.author.email }}: {{ thread.content }}</p>
+{% for comment in thread.comment_set.all %}
+    {% if not forloop.first %}
+        <p>--- {{ comment.author.email }}: {{ comment.content }}</p>
+    {% endif %}
+{% empty %}
+    <p>No comments yet.</p>
+{% endfor %}
+{% include 'threads/comment_form.html' %}

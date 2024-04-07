@@ -1,11 +1,9 @@
-from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponseForbidden
 from django.urls import reverse_lazy
 from django.views.generic import ListView, CreateView, DeleteView, DetailView
 
 from .form import PostForm
 from .models import Post
-from ..threads.models import Comment
 
 
 class PostListView(ListView):
@@ -51,14 +49,3 @@ class PostDeleteView(DeleteView):
         return self.delete(request, *args, **kwargs)
 
 
-class CommentCreateView(LoginRequiredMixin, CreateView):
-    model = Comment
-    fields = ['content']
-
-    def form_valid(self, form):
-        form.instance.author = self.request.user
-        form.instance.post_id = self.kwargs['post_id']
-        return super().form_valid(form)
-
-    def get_success_url(self):
-        return reverse_lazy('post_detail', kwargs={'pk': self.kwargs['post_id']})

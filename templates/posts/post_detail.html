@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load comment_tags %}
 {% block title %}Post Detail{% endblock title %}
 
 {% block content %}
@@ -9,15 +10,14 @@
     <p>Author: {{ post.author }}</p>
     <p>Tags: {{ post.tags.all|join:", " }}</p>
     <p>Likes: {{ post.likes.all|length }}</p>
-    <p>Comments: {{ post.comment_set.all|length }}</p>
-    <form method="post" action="{% url 'comment_create' post.id %}">
-        {% csrf_token %}
-        <textarea name="content"></textarea>
-        <input type="submit" value="Submit Comment">
-    </form>
-    <h3>Comments</h3>
+    <p>Comments: {{ post|total_comments }}</p>
+    <h3>Add a Thought</h3>
+    {% include 'threads/thread_form.html' %}
 
-    {% for comment in post.comment_set.all %}
-        <p>{{ comment.author.email }}: {{ comment.content }}</p>
+    <h3>Join a thought flow</h3>
+    {% for thread in post.thread_set.all %}
+        {% include 'threads/thread_display.html' %}
+    {% empty %}
+        <p>No threads yet.</p>
     {% endfor %}
 {% endblock content %}

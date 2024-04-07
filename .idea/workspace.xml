@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef332e7a-0011-4f49-be7b-247ed3879e50" name="Changes" comment="added post delete&#10;added tests for the post delete view;&#10;added post detail">
-      <change afterPath="$PROJECT_DIR$/final_exam/posts/migrations/0005_delete_comment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/final_exam/threads/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_exam/threads/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/threads/thread_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/posts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/posts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/fragments/_posts_loop.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fragments/_posts_loop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/posts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/posts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/threads/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/threads/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/threads/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/threads/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/posts/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/posts/post_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -261,7 +261,7 @@
       <workItem from="1712133296458" duration="3000" />
       <workItem from="1712395748416" duration="13170000" />
       <workItem from="1712476528750" duration="147000" />
-      <workItem from="1712476686065" duration="15732000" />
+      <workItem from="1712476686065" duration="18502000" />
     </task>
     <task id="LOCAL-00001" summary="Added Profile details View">
       <option name="closed" value="true" />
@@ -312,18 +312,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/final_exam/posts/views.py</url>
-          <line>44</line>
+          <line>45</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/final_exam/posts/views.py</url>
-          <line>43</line>
+          <line>44</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint type="django-line">
           <url>file://$PROJECT_DIR$/templates/accounts/profile_detail.html</url>
           <line>34</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="django-line">
+          <url>file://$PROJECT_DIR$/templates/posts/post_detail.html</url>
+          <line>13</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
