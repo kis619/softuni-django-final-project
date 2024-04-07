@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef332e7a-0011-4f49-be7b-247ed3879e50" name="Changes" comment="added post delete&#10;added tests for the post delete view;&#10;added post detail">
-      <change afterPath="$PROJECT_DIR$/final_exam/posts/migrations/0004_comment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_exam/posts/migrations/0005_delete_comment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_exam/threads/migrations/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_exam/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/posts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/posts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/posts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_exam/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/posts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/posts/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/posts/post_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fragments/_posts_loop.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fragments/_posts_loop.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,8 +85,8 @@
       <recent name="$PROJECT_DIR$/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/final_exam/posts/tests/integration" />
       <recent name="$PROJECT_DIR$/final_exam" />
+      <recent name="$PROJECT_DIR$/final_exam/posts/tests/integration" />
       <recent name="$PROJECT_DIR$/static/images" />
       <recent name="$PROJECT_DIR$/templates/home" />
     </key>
@@ -259,7 +261,7 @@
       <workItem from="1712133296458" duration="3000" />
       <workItem from="1712395748416" duration="13170000" />
       <workItem from="1712476528750" duration="147000" />
-      <workItem from="1712476686065" duration="14950000" />
+      <workItem from="1712476686065" duration="15732000" />
     </task>
     <task id="LOCAL-00001" summary="Added Profile details View">
       <option name="closed" value="true" />
@@ -322,16 +324,6 @@
           <url>file://$PROJECT_DIR$/templates/accounts/profile_detail.html</url>
           <line>34</line>
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="django-line">
-          <url>file://$PROJECT_DIR$/templates/posts/post_detail.html</url>
-          <line>21</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="django-line">
-          <url>file://$PROJECT_DIR$/templates/posts/post_detail.html</url>
-          <line>20</line>
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

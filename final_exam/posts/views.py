@@ -4,7 +4,8 @@ from django.urls import reverse_lazy
 from django.views.generic import ListView, CreateView, DeleteView, DetailView
 
 from .form import PostForm
-from .models import Post, Comment
+from .models import Post
+from ..threads.models import Comment
 
 
 class PostListView(ListView):
@@ -23,6 +24,7 @@ class PostDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         return context
+
 
 class PostCreateView(CreateView):
     model = Post
