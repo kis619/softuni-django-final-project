@@ -2,7 +2,7 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView, LogoutView
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, DetailView, UpdateView
+from django.views.generic import CreateView, DetailView, UpdateView, DeleteView
 
 from final_exam.accounts.forms import LetUsTalkUserCreationForm, LetUsTalkUserLoginForm, LetUsTalkUserProfileForm
 
@@ -46,3 +46,12 @@ class ProfileUpdateView(LoginRequiredMixin, UpdateView):
 
     def get_success_url(self):
         return reverse_lazy('profile_detail')
+
+
+class ProfileDeleteView(LoginRequiredMixin, DeleteView):
+    model = UserModel
+    template_name = 'accounts/profile_delete.html'
+    success_url = reverse_lazy('home')
+
+    def get_object(self, queryset=None):
+        return self.request.user

@@ -1,7 +1,8 @@
 from django.contrib.auth.views import PasswordChangeView, PasswordChangeDoneView
 from django.urls import path
 
-from final_exam.accounts.views import SignUpView, LutLoginView, LutLogoutView, ProfileDetailView, ProfileUpdateView
+from final_exam.accounts.views import SignUpView, LutLoginView, LutLogoutView, ProfileDetailView, ProfileUpdateView, \
+    ProfileDeleteView
 
 urlpatterns = [
     path('signup/', SignUpView.as_view(), name='signup'),
@@ -15,4 +16,5 @@ urlpatterns = [
 
     path('profile/', ProfileDetailView.as_view(), name='profile_detail'),
     path('profile/edit/', ProfileUpdateView.as_view(), name='profile_edit'),
+    path('profile/delete/', ProfileDeleteView.as_view(), name='profile_delete'),
 ]

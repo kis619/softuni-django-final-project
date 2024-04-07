@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef332e7a-0011-4f49-be7b-247ed3879e50" name="Changes" comment="setup media and static files structure; displaying styled image on profile_details now">
-      <change afterPath="$PROJECT_DIR$/templates/accounts/profile_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_exam/posts/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_exam/posts/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/profile_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post/posts_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/softuni-django-final-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/softuni-django-final-project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/accounts/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_exam/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/accounts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_exam/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accounts/profile_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/profile_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +30,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -52,13 +60,14 @@
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/krissi/projects/softuni-django-final-project/static/images",
+    "last_opened_file_path": "/home/krissi/projects/softuni-django-final-project",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -74,9 +83,9 @@
       <recent name="$PROJECT_DIR$/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/final_exam" />
       <recent name="$PROJECT_DIR$/static/images" />
       <recent name="$PROJECT_DIR$/templates/home" />
-      <recent name="$PROJECT_DIR$/final_exam" />
     </key>
   </component>
   <component name="RunManager">
@@ -90,7 +99,6 @@
         <env name="DJANGO_SETTINGS_MODULE" value="final_exam.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.10 (softuni-django-final-project) (2)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -135,7 +143,9 @@
       <workItem from="1711875194909" duration="6988000" />
       <workItem from="1712085419135" duration="16403000" />
       <workItem from="1712133296458" duration="3000" />
-      <workItem from="1712395748416" duration="10056000" />
+      <workItem from="1712395748416" duration="13170000" />
+      <workItem from="1712476528750" duration="147000" />
+      <workItem from="1712476686065" duration="1591000" />
     </task>
     <task id="LOCAL-00001" summary="Added Profile details View">
       <option name="closed" value="true" />
