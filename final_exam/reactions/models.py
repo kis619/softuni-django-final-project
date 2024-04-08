@@ -17,7 +17,7 @@ class Reaction(models.Model):
     )
     reaction_type = models.CharField(max_length=20, choices=REACTION_TYPES)
 
-    user = models.ForeignKey(UserModel, on_delete=models.CASCADE)
+    users = models.ManyToManyField(UserModel)
     post = models.ForeignKey(Post, on_delete=models.CASCADE, null=True, blank=True)
     comment = models.ForeignKey(Comment, on_delete=models.CASCADE, null=True, blank=True)
 
