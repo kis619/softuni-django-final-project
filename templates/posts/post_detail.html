@@ -11,6 +11,8 @@
     <p>Tags: {{ post.tags.all|join:", " }}</p>
     <p>Likes: {{ post.likes.all|length }}</p>
     <p>Comments: {{ post|total_comments }}</p>
+    {% include 'reactions/reactions_display.html' with url_name="post_react" id=post.id %}
+
     <h3>Add a Thought</h3>
     {% include 'threads/thread_form.html' %}
 

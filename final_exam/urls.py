@@ -10,5 +10,6 @@ urlpatterns = (
             path('accounts/', include('final_exam.accounts.urls')),
             path('posts/', include('final_exam.posts.urls')),
             path('conversations/', include('final_exam.threads.urls')),  # threads
+            path('reactions/', include('final_exam.reactions.urls')),
         ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 )

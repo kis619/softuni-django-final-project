@@ -1,0 +1,8 @@
+<div class="reactions">
+    <form action="{% url url_name id %}" method="POST">
+        {% csrf_token %}
+        <button type="submit" name="reaction_type" value="like">👍</button>
+        <button type="submit" name="reaction_type" value="heart">❤️</button>
+        <button type="submit" name="reaction_type" value="brain">🧠</button>
+    </form>
+</div>

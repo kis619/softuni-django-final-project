@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef332e7a-0011-4f49-be7b-247ed3879e50" name="Changes" comment="added post delete&#10;added tests for the post delete view;&#10;added post detail">
-      <change afterPath="$PROJECT_DIR$/static/css/threads.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_exam/reactions/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_exam/reactions/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_exam/reactions/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/reactions/reactions_display.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/threads.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/threads.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/posts/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/posts/post_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/threads/thread_display.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/threads/thread_display.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,9 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="Python Script" />
         <option value="HTML File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -44,7 +50,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.softuni-django-final-project.executor": "Run",
+    "Django Server.softuni-django-final-project.executor": "Debug",
     "Django tests.Test: final_exam.posts.tests.integration.executor": "Run",
     "Python tests.Python tests for posts.tests.TestPostDeleteView.test_returns_HttpResponseForbidden_if_user_is_not_author.executor": "Run",
     "Python tests.Python tests for posts.tests.TestPostDeleteView.test_returns_HttpResponseNotFound_if_post_does_not_exist.executor": "Run",
@@ -259,7 +265,7 @@
       <workItem from="1712476528750" duration="147000" />
       <workItem from="1712476686065" duration="27053000" />
       <workItem from="1712557548112" duration="46000" />
-      <workItem from="1712586806796" duration="412000" />
+      <workItem from="1712586806796" duration="7905000" />
     </task>
     <task id="LOCAL-00001" summary="Added Profile details View">
       <option name="closed" value="true" />

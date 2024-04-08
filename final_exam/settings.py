@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'final_exam.accounts.apps.AccountsConfig',
     "final_exam.home.apps.HomeConfig",
     "final_exam.posts.apps.PostConfig",
-    "final_exam.threads.apps.ThreadsConfig"
+    "final_exam.threads.apps.ThreadsConfig",
+    "final_exam.reactions.apps.ReactionsConfig"
 ]
 
 MIDDLEWARE = [
