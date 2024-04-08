@@ -17,7 +17,7 @@
     {% include 'threads/thread_form.html' %}
 
     <h3>Join a thought flow</h3>
-    {% for thread in post.thread_set.all %}
+    {% for thread in threads %}
         {% include 'threads/thread_display.html' %}
     {% empty %}
         <p>No threads yet.</p>

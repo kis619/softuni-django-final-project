@@ -1,13 +1,13 @@
 <div class="thread">
     <p class="thread-title">{{ thread.author.email }}: {{ thread.content }}</p>
-    {% for comment in thread.comment_set.all %}
+    {% for comment in thread.comments %}
         {% if not forloop.first %}
             <div class="comment">
                 <div class="comment-author">{{ comment.author }}</div>
                 <div class="comment-content">{{ comment.content }}</div>
             </div>
         {% endif %}
-        {% include 'reactions/reactions_display.html' with url_name="comment_react" id=comment.id %}
+        {% include 'reactions/reactions_display.html' with url_name="comment_react" id=comment.id  user_reactions=comment.user_reactions %}
 
     {% empty %}
         <p>No comments yet.</p>

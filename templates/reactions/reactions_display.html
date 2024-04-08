@@ -1,8 +1,8 @@
 <div class="reactions">
     <form action="{% url url_name id %}" method="POST">
         {% csrf_token %}
-        <button type="submit" name="reaction_type" value="like">👍</button>
-        <button type="submit" name="reaction_type" value="heart">❤️</button>
-        <button type="submit" name="reaction_type" value="brain">🧠</button>
+        <button type="submit" name="reaction_type" value="like" class="{% if user_reactions.like %}selected{% endif %}">👍</button>
+        <button type="submit" name="reaction_type" value="heart" class="{% if user_reactions.heart %}selected{% endif %}">❤️</button>
+        <button type="submit" name="reaction_type" value="brain" class="{% if user_reactions.brain %}selected{% endif %}">🧠</button>
     </form>
 </div>

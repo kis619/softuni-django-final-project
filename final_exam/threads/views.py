@@ -15,10 +15,9 @@ class ThreadCreateView(LoginRequiredMixin, CreateView):
         response = super().form_valid(form)
         Comment.objects.create(
             author=self.request.user,
-            thread=self.object,  # the newly created Thread instance
+            thread=self.object,
             content=form.instance.content,
         )
-
         return response
 
     def get_success_url(self):

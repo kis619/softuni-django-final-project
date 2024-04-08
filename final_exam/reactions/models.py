@@ -25,3 +25,6 @@ class Reaction(models.Model):
         if not (bool(self.post) ^ bool(self.comment)):
             raise ValidationError("Either post or comment must be set, but not both.")
         super(Reaction, self).save(*args, **kwargs)
+
+    def __str__(self):
+        return self.reaction_type
