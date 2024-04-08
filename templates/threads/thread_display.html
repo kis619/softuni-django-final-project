@@ -1,9 +1,17 @@
-<p>{{ thread.author.email }}: {{ thread.content }}</p>
-{% for comment in thread.comment_set.all %}
-    {% if not forloop.first %}
-        <p>--- {{ comment.author.email }}: {{ comment.content }}</p>
-    {% endif %}
-{% empty %}
-    <p>No comments yet.</p>
-{% endfor %}
+<div class="thread">
+    {#    <div class="thread-author">{{ thread.author }}</div>#}
+    {#    <div class="thread-content">{{ thread.content }}</div>#}
+    <p class="thread-title">{{ thread.author.email }}: {{ thread.content }}</p>
+    {% for comment in thread.comment_set.all %}
+        {% if not forloop.first %}
+            {#        <p>--- {{ comment.author.email }}: {{ comment.content }}</p>#}
+            <div class="comment">
+                <div class="comment-author">{{ comment.author }}</div>
+                <div class="comment-content">{{ comment.content }}</div>
+            </div>
+        {% endif %}
+    {% empty %}
+        <p>No comments yet.</p>
+    {% endfor %}
+</div>
 {% include 'threads/comment_form.html' %}

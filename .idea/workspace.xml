@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef332e7a-0011-4f49-be7b-247ed3879e50" name="Changes" comment="added post delete&#10;added tests for the post delete view;&#10;added post detail">
-      <change afterPath="$PROJECT_DIR$/final_exam/threads/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/threads/thread_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/threads.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/posts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/posts/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/threads/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/threads/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/threads/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/threads/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/posts/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/posts/post_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/threads/thread_display.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/threads/thread_display.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -48,7 +44,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.softuni-django-final-project.executor": "Debug",
+    "Django Server.softuni-django-final-project.executor": "Run",
     "Django tests.Test: final_exam.posts.tests.integration.executor": "Run",
     "Python tests.Python tests for posts.tests.TestPostDeleteView.test_returns_HttpResponseForbidden_if_user_is_not_author.executor": "Run",
     "Python tests.Python tests for posts.tests.TestPostDeleteView.test_returns_HttpResponseNotFound_if_post_does_not_exist.executor": "Run",
@@ -62,7 +58,7 @@
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/krissi/Work/turbit",
+    "last_opened_file_path": "/home/krissi/projects/softuni-django-final-project",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -261,7 +257,9 @@
       <workItem from="1712133296458" duration="3000" />
       <workItem from="1712395748416" duration="13170000" />
       <workItem from="1712476528750" duration="147000" />
-      <workItem from="1712476686065" duration="18502000" />
+      <workItem from="1712476686065" duration="27053000" />
+      <workItem from="1712557548112" duration="46000" />
+      <workItem from="1712586806796" duration="412000" />
     </task>
     <task id="LOCAL-00001" summary="Added Profile details View">
       <option name="closed" value="true" />
@@ -312,23 +310,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/final_exam/posts/views.py</url>
-          <line>45</line>
+          <line>43</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/final_exam/posts/views.py</url>
-          <line>44</line>
+          <line>42</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/final_exam/threads/templatetags/comment_tags.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint type="django-line">
           <url>file://$PROJECT_DIR$/templates/accounts/profile_detail.html</url>
           <line>34</line>
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="django-line">
-          <url>file://$PROJECT_DIR$/templates/posts/post_detail.html</url>
-          <line>13</line>
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

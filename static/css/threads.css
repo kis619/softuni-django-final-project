@@ -1,0 +1,27 @@
+/* threads.css */
+
+.thread {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.thread-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    background: cadetblue;
+}
+
+.comment-author {
+    font-weight: bold;
+}
+
+.comment-content {
+    margin-top: 5px;
+}
