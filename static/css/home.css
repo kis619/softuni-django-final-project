@@ -19,17 +19,15 @@ section {
     transition: background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease;
     background-color: var(--primary-color);
     border-radius: 5px;
-    font-size: 1.3em;
+    font-size: 2.3em;
+    display: inline-block;
+    margin: 1em auto;
 }
 
 .start-link:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    font-size: 2.4em;
-}
-
-.intro > * {
-    margin-bottom: 20px;
+    font-size: 2.7em;
 }
 
 .intro > p {

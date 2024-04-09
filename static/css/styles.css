@@ -39,6 +39,7 @@ nav {
 .nav-left {
     font-family: "Dancing Script", cursive;
 }
+
 .nav-left, .nav-center, .nav-right {
     display: flex;
     align-items: center;
@@ -85,7 +86,7 @@ main {
     margin: 0 auto;
     max-width: 960px;
     color: var(--text-color);
-
+    width: 100%;
 }
 
 /* Footer */
@@ -125,4 +126,10 @@ footer {
     max-height: 100px;
     width: auto;
     height: auto;
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        width: revert;
+    }
 }
