@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/threads.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/reactions.css' %}">
@@ -11,31 +12,33 @@
     {% block extra_head %}{% endblock extra_head %}
 </head>
 <body>
-<nav>
-    <a href="{% url 'home' %}">Let us talk</a>
-    <a href="{% url 'posts_list' %}">All Thoughts</a>
-
-    {% if user.is_authenticated %}
-        <a href="{% url 'profile_detail' %}">Profile</a>
-        <form method="post" action="{% url 'logout' %}">
-            {% csrf_token %}
-            <button type="submit">Logout</button>
-        </form>
-    {% else %}
-        <a href="{% url 'login' %}">Login</a>
-        <a href="{% url 'signup' %}">Register</a>
-    {% endif %}
-
-</nav>
-
+{% include 'fragments/_navigation.html' %}
 <main>
     {% block content %}
         <!-- Default content goes here if not overridden -->
     {% endblock content %}
 </main>
 <footer>
-    <p>&copy; 2024 My Django Site</p>
+    <div class="footer-content">
+        <div class="footer-content">
+            <p>Made By Kristiyana</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/kristiyana-milcheva-9a2a84240/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/kis619" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
 </footer>
+<script>
+    document.getElementById('logout-link').addEventListener('click', function (event) {
+        event.preventDefault();
+        document.getElementById('logout-form').submit();
+    });
+</script>
 {% block extra_js %}{% endblock extra_js %}
 </body>
 </html>
