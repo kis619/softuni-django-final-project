@@ -8,17 +8,21 @@
 {% block title %}Home - My Website{% endblock %}
 
 {% block content %}
-    <section>
+    <section class="intro">
         <h2>Let us Talk</h2>
         <p>
-            Share your thoughts with the world.
-            Don't be brief - at lest 2000 words.
+            Share your thoughts with the world. Don't be shy.
+            We want to hear what you have to say. And we want to have a nice discussion.
+            Therefore, we have one rule:
+            Don't be brief - give us at lest 2000 words.
         </p>
-        <a href="{% url 'posts_list' %}">Start talking </a>
-        <p>The latest thoughts: </p>
+        <a href="{% url 'posts_list' %}" class="start-link">Start talking </a>
+    </section>
+
+    <section class="latest-thoughts">
+        <h3>The latest thoughts: </h3>
         <div>
             {% include 'fragments/_posts_loop.html' %}
         </div>
-
     </section>
 {% endblock %}

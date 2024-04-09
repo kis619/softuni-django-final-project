@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef332e7a-0011-4f49-be7b-247ed3879e50" name="Changes" comment="added post delete&#10;added tests for the post delete view;&#10;added post detail">
-      <change afterPath="$PROJECT_DIR$/templates/fragments/_navigation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/softuni-django-final-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/softuni-django-final-project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +263,7 @@
       <workItem from="1712476528750" duration="147000" />
       <workItem from="1712476686065" duration="27053000" />
       <workItem from="1712557548112" duration="46000" />
-      <workItem from="1712586806796" duration="20530000" />
+      <workItem from="1712586806796" duration="25198000" />
     </task>
     <task id="LOCAL-00001" summary="Added Profile details View">
       <option name="closed" value="true" />
