@@ -1,0 +1,14 @@
+{% load static %}
+
+<a class="post-card" href="{% url 'post_detail' post.id %}">
+    <div class="card-top">
+
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.content|truncatewords:30 }}</p>
+    </div>
+    {% if post.image %}
+        <img src="{{ post.image.url }}" alt="{{ post.title }}">
+    {% else %}
+        <img src="{% static 'images/default-avatar.jpg' %}" alt="Default Image">
+    {% endif %}
+</a>
