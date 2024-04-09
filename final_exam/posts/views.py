@@ -23,19 +23,21 @@ class PostDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         post = self.get_object()
-        user_reactions = Reaction.objects.filter(post=post, users=self.request.user).values_list('reaction_type',
-                                                                                                 flat=True)
-        context['user_reactions'] = {reaction: True for reaction in user_reactions}
 
-        threads = post.thread_set.all()
-        for thread in threads:
-            comments = thread.comment_set.all()
-            for comment in comments:
-                comment_reactions = Reaction.objects.filter(comment=comment, users=self.request.user).values_list(
-                    'reaction_type', flat=True)
-                comment.user_reactions = {reaction: True for reaction in comment_reactions}
-            thread.comments = comments
-        context['threads'] = threads
+        if self.request.user.is_authenticated:
+            user_reactions = Reaction.objects.filter(post=post, users=self.request.user).values_list('reaction_type',
+                                                                                                     flat=True)
+            context['user_reactions'] = {reaction: True for reaction in user_reactions}
+
+            threads = post.thread_set.all()
+            for thread in threads:
+                comments = thread.comment_set.all()
+                for comment in comments:
+                    comment_reactions = Reaction.objects.filter(comment=comment, users=self.request.user).values_list(
+                        'reaction_type', flat=True)
+                    comment.user_reactions = {reaction: True for reaction in comment_reactions}
+                thread.comments = comments
+            context['threads'] = threads
         return context
 
 

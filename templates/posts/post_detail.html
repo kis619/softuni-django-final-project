@@ -12,14 +12,15 @@
     <p>Likes: {{ post.likes.all|length }}</p>
     <p>Comments: {{ post|total_comments }}</p>
     {% include 'reactions/reactions_display.html' with url_name="post_react" id=post.id %}
+    {% if user.is_authenticated %}
+        <h3>Add a Thought</h3>
+        {% include 'threads/thread_form.html' %}
 
-    <h3>Add a Thought</h3>
-    {% include 'threads/thread_form.html' %}
-
-    <h3>Join a thought flow</h3>
-    {% for thread in threads %}
-        {% include 'threads/thread_display.html' %}
-    {% empty %}
-        <p>No threads yet.</p>
-    {% endfor %}
+        <h3>Join a thought flow</h3>
+        {% for thread in threads %}
+            {% include 'threads/thread_display.html' %}
+        {% empty %}
+            <p>No threads yet.</p>
+        {% endfor %}
+    {% endif %}
 {% endblock content %}
