@@ -36,3 +36,6 @@ class ReactionCreateView(CreateView):
     def get_success_url(self):
         post_id = self.kwargs.get('post_id') or get_post_id_from_comment_id(self.kwargs.get('comment_id'))
         return reverse('post_detail', args=[post_id])
+
+
+#TODO: not refresh when reacting to a thread??

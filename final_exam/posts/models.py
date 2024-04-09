@@ -16,7 +16,8 @@ class Post(models.Model):
         max_length=MAX_CONTENT_LENGTH,
         validators=[MinLengthValidator(MIN_CONTENT_LENGTH)],
         blank=False,
-    )
+    ) #TODO: make sure the form does not get submitted if this is less than 20 cause now I get an Attribute error - maybe something to do with the post method I overwrote
+    image = models.ImageField(upload_to='posts/', null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True, db_index=True)
     updated_at = models.DateTimeField(auto_now=True)
     author = models.ForeignKey(UserModel, on_delete=models.CASCADE)

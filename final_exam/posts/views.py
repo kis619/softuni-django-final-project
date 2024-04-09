@@ -49,6 +49,18 @@ class PostCreateView(CreateView):
         form.instance.author = self.request.user
         return super().form_valid(form)
 
+    def post(self, request, *args, **kwargs):
+        form = self.get_form()
+        if form.is_valid():
+            return self.form_valid(form)
+        else:
+            return self.form_invalid(form)
+
+    def get_form_kwargs(self):
+        kwargs = super(PostCreateView, self).get_form_kwargs()
+        kwargs.update({'files': self.request.FILES})
+        return kwargs
+
 
 class PostDeleteView(DeleteView):
     model = Post
