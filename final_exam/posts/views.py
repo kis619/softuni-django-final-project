@@ -1,3 +1,4 @@
+from django.db.models import Count
 from django.http import HttpResponseForbidden
 from django.urls import reverse_lazy
 from django.views.generic import ListView, CreateView, DeleteView, DetailView
@@ -23,6 +24,8 @@ class PostDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         post = self.get_object()
+        post_reactions = Reaction.objects.filter(post=post).values('reaction_type').annotate(count=Count('id'))
+        context['post_reactions_count'] = {reaction['reaction_type']: reaction['count'] for reaction in post_reactions}
 
         if self.request.user.is_authenticated:
             user_reactions = Reaction.objects.filter(post=post, users=self.request.user).values_list('reaction_type',
@@ -36,6 +39,11 @@ class PostDetailView(DetailView):
                     comment_reactions = Reaction.objects.filter(comment=comment, users=self.request.user).values_list(
                         'reaction_type', flat=True)
                     comment.user_reactions = {reaction: True for reaction in comment_reactions}
+
+                    comment_reactions = Reaction.objects.filter(comment=comment).values('reaction_type').annotate(
+                        count=Count('id'))
+                    comment.reactions_count = {reaction['reaction_type']: reaction['count'] for reaction in
+                                               comment_reactions}
                 thread.comments = comments
             context['threads'] = threads
         return context
