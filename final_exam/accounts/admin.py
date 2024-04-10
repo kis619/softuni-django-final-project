@@ -7,12 +7,8 @@ from final_exam.accounts.models import LetUsTalkUser
 UserModel = get_user_model()
 
 
-# Register your models here.
 @admin.register(LetUsTalkUser)
 class LetUsTalkUserAdmin(UserAdmin):
-    model = UserModel
-    # add_form = LetUsTalkUserCreationForm #TODO: what are these for
-    # form = LetUsTalkUserChangeForm #TODO: what are these for
     list_display = ('pk', 'email', 'is_staff', 'is_superuser')
     search_fields = ('email',)
     ordering = ('pk',)

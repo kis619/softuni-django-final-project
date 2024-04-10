@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef332e7a-0011-4f49-be7b-247ed3879e50" name="Changes" comment="added post delete&#10;added tests for the post delete view;&#10;added post detail">
-      <change afterPath="$PROJECT_DIR$/final_exam/posts/migrations/0010_alter_post_content.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/posts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/threads/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/threads/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/accounts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/posts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/posts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/reactions/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/reactions/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/threads/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/threads/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,11 +311,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/venv/lib/python3.10/site-packages/django/contrib/admin/options.py</url>
-          <line>836</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/final_exam/threads/templatetags/comment_tags.py</url>
           <line>7</line>
