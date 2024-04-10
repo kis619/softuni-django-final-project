@@ -1,4 +1,9 @@
 /* Global Styles */
+
+* {
+  box-sizing: border-box;
+}
+
 :root {
     --primary-color: rgba(82, 112, 53, 0.55);
     --secondary-color: rgba(215, 229, 211, 0.81);

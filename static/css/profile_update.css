@@ -1,0 +1,43 @@
+.profile-update-form {
+    /*max-width: 20em;*/
+    margin: 0 auto;
+    padding: 1.7em;
+    border: 1px solid var(--tertiary-color);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.profile-update-form input,
+.profile-update-form button {
+    /*width: 100%;*/
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.profile-update-form button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+.profile-update-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+.profile-update-form textarea {
+    max-width: 24em;
+}
+
+.profile-update-form input[type="file"] {
+    margin-top: 2em;
+}
+
+.profile-update-form a {
+    color: var(--primary-color);
+}

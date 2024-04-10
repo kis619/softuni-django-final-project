@@ -3,11 +3,15 @@
 
 {% block title %}Edit Profile{% endblock title %}
 
+{% block extra_head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/profile_update.css' %}">
+{% endblock extra_head %}
+
 {% block content %}
     <h2>Edit Profile</h2>
-    <form method="post" enctype="multipart/form-data">
+    <form method="post" enctype="multipart/form-data" class="profile-update-form">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Update</button>
+        <button type="submit">Edit</button>
     </form>
 {% endblock content %}

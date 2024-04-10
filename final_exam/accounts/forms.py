@@ -31,3 +31,9 @@ class LetUsTalkUserProfileForm(forms.ModelForm):
     class Meta:
         model = LetUsTalkUserProfile
         fields = ['first_name', 'last_name', 'avatar', 'bio', 'birth_date']
+
+        widgets = {
+            'birth_date': forms.DateInput(format=('%Y-%m-%d'),
+                                          attrs={'class': 'form-control', 'placeholder': 'Select a date',
+                                                 'type': 'date'}),
+        }
