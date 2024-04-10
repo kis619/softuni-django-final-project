@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ef332e7a-0011-4f49-be7b-247ed3879e50" name="Changes" comment="added post delete&#10;added tests for the post delete view;&#10;added post detail">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/posts/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/posts/form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/posts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fragments/_author_posted.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fragments/_author_posted.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fragments/_display_usernames_or_email.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fragments/_display_usernames_or_email.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/threads/thread_display.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/threads/thread_display.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +267,7 @@
       <workItem from="1712557548112" duration="46000" />
       <workItem from="1712586806796" duration="27321000" />
       <workItem from="1712657410724" duration="34000" />
-      <workItem from="1712657556291" duration="41865000" />
+      <workItem from="1712657556291" duration="43896000" />
     </task>
     <task id="LOCAL-00001" summary="Added Profile details View">
       <option name="closed" value="true" />
@@ -323,6 +325,16 @@
           <url>file://$PROJECT_DIR$/final_exam/posts/views.py</url>
           <line>25</line>
           <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="django-line">
+          <url>file://$PROJECT_DIR$/templates/reactions/reactions_display.html</url>
+          <line>1</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="django-line">
+          <url>file://$PROJECT_DIR$/templates/threads/thread_display.html</url>
+          <line>2</line>
+          <option name="timeStamp" value="103" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

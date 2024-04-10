@@ -2,14 +2,10 @@
     {% for comment in thread.comments %}
         {% if forloop.first %}
             <div class="initial-comment">
-
                 <p class="thread-title">{{ thread.author.email }}: {{ thread.content }}</p>
-
-                {#            <div class="thread-title">#}
-                {#                <div class="comment-author">{{ comment.author }}</div>#}
-                {#                <div class="comment-content">{{ comment.content }}</div>#}
                 <div class="reactions-array">
-                    {% include 'reactions/reactions_display.html' with url_name="comment_react" id=comment.id  user_reactions=comment.user_reactions %}
+                    {% include 'reactions/reactions_display.html' with url_name="comment_react" id=comment.id  user_reactions=comment.user_reactions reactions_count=comment.reactions_count %}
+
                 </div>
             </div>
 
@@ -18,7 +14,8 @@
                 <div class="comment-author">{{ comment.author }}</div>
                 <div class="comment-content">{{ comment.content }}</div>
                 <div class="reactions-array">
-                    {% include 'reactions/reactions_display.html' with url_name="comment_react" id=comment.id  user_reactions=comment.user_reactions %}
+                    {% include 'reactions/reactions_display.html' with url_name="comment_react" id=comment.id  user_reactions=comment.user_reactions reactions_count=comment.reactions_count %}
+
                 </div>
             </div>
         {% endif %}

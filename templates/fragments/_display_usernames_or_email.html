@@ -1,5 +1,12 @@
-{% if user.letustalkuserprofile.first_name or user.letustalkuserprofile.last_name %}
-    {{ user.letustalkuserprofile.first_name }} {{ user.letustalkuserprofile.last_name }}
-{% else %}
-    {{ user.email }}
-{% endif %}
+{% with profile=user.letustalkuserprofile %}
+
+    {% if profile.first_name and profile.last_name %}
+        {{ profile.first_name }} {{ profile.last_name }}
+    {% elif profile.first_name %}
+        {{ profile.first_name }}
+    {% elif profile.last_name %}
+        {{ profile.last_name }}
+    {% else %}
+        {{ user.email }}
+    {% endif %}
+{% endwith %}

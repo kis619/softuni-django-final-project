@@ -2,13 +2,13 @@
     {% if user.is_authenticated %}
         <a href="{% url 'profile_detail' post.author.id %}">
     {% endif %}
-            <img class="author-avatar" src="{{ post.author.letustalkuserprofile.avatar.url }}"
-                 alt="{{ post.author.email }}'s avatar">
-            <span class="author-email">
+    <img class="author-avatar" src="{{ post.author.letustalkuserprofile.avatar.url }}"
+         alt="{{ post.author.email }}'s avatar">
+    <span class="author-email">
                                 {% include 'fragments/_display_usernames_or_email.html' with user=post.author %}
                             </span>
-            <span>  &nbsp posted on  &nbsp </span>
-            <p>{{ post.created_at }}</p>
+    <span>  &nbsp posted on  &nbsp </span>
+    <p>{{ post.created_at }}</p>
     {% if user.is_authenticated %}
         </a>
     {% endif %}
