@@ -2,7 +2,7 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.views.generic.edit import CreateView
 
-from utils import get_post_id_from_comment_id
+from final_exam.utils import get_post_id_from_comment_id
 from .models import Reaction
 
 
