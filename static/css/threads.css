@@ -3,13 +3,14 @@
 }
 
 .thread-title {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: var(--title-color);
     margin-bottom: .7em;
     font-weight: bold;
     border: 1px solid var(--secondary-color);
-    min-height: 3em;
     padding: .6em;
+    padding-bottom: 2em;
+    line-height: 1.3em;
 
 }
 
@@ -26,6 +27,8 @@
     margin-left: 2em;
     border: 1px solid #ccc;
     position: relative;
+    padding-bottom: 2em;
+    font-size: 1.2em;
 }
 
 .comment-author {

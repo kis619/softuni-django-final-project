@@ -6,10 +6,10 @@
 .reactions-array {
     position: absolute;
     right: 1em;
-    bottom: -10px;
+    bottom: -14px;
 }
 
-.reactions-array button {
+.reactions button {
     border: 2px solid var(--secondary-color);
     border-radius: 50%;
     padding: 0.7em;
