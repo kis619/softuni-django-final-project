@@ -39,3 +39,4 @@ class ReactionCreateView(CreateView):
 
 
 #TODO: not refresh when reacting to a thread??
+# TODO: add a reaction count for comments

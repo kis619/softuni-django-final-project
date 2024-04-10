@@ -1,7 +1,7 @@
-<form method="post" action="{% url 'thread_create' post.id %}">
+<form class="comment-form" method="post" action="{% url 'thread_create' post.id %}">
     {% csrf_token %}
     <label>
-        <textarea name="content" placeholder="Comment"></textarea>
+        <textarea name="content" placeholder="Share a Thought"></textarea>
     </label>
-    <input type="submit" value="Start a new Thought flow">
+    <input type="submit" value="Share">
 </form>

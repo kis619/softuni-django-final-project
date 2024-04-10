@@ -1,16 +1,30 @@
-<div class="thread">
-    <p class="thread-title">{{ thread.author.email }}: {{ thread.content }}</p>
+<div class="thread background-styles">
     {% for comment in thread.comments %}
-        {% if not forloop.first %}
+        {% if forloop.first %}
+            <div class="initial-comment">
+
+                <p class="thread-title">{{ thread.author.email }}: {{ thread.content }}</p>
+
+                {#            <div class="thread-title">#}
+                {#                <div class="comment-author">{{ comment.author }}</div>#}
+                {#                <div class="comment-content">{{ comment.content }}</div>#}
+                <div class="reactions-array">
+                    {% include 'reactions/reactions_display.html' with url_name="comment_react" id=comment.id  user_reactions=comment.user_reactions %}
+                </div>
+            </div>
+
+        {% else %}
             <div class="comment">
                 <div class="comment-author">{{ comment.author }}</div>
                 <div class="comment-content">{{ comment.content }}</div>
+                <div class="reactions-array">
+                    {% include 'reactions/reactions_display.html' with url_name="comment_react" id=comment.id  user_reactions=comment.user_reactions %}
+                </div>
             </div>
         {% endif %}
-        {% include 'reactions/reactions_display.html' with url_name="comment_react" id=comment.id  user_reactions=comment.user_reactions %}
-
     {% empty %}
         <p>No comments yet.</p>
     {% endfor %}
+    {% include 'threads/comment_form.html' %}
+
 </div>
-{% include 'threads/comment_form.html' %}

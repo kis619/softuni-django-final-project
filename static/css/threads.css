@@ -1,19 +1,31 @@
 .thread {
     border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
 }
 
 .thread-title {
-    font-size: 1.2em;
+    font-size: 1.5em;
+    color: var(--title-color);
+    margin-bottom: .7em;
     font-weight: bold;
+    border: 1px solid var(--secondary-color);
+    min-height: 3em;
+    padding: .6em;
+
+}
+
+.initial-comment {
+    position: relative;
 }
 
 .comment {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: .6em;
+    margin-bottom: 1em;
+    margin-top: .5em;
+    margin-left: 2em;
     border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px 0;
-    background: cadetblue;
+    position: relative;
 }
 
 .comment-author {
@@ -22,4 +34,6 @@
 
 .comment-content {
     margin-top: 5px;
+    color: var(--text-color);
 }
+

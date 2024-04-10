@@ -12,24 +12,6 @@ section {
     text-align: center;
 }
 
-.start-link {
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease;
-    background-color: var(--primary-color);
-    border-radius: 5px;
-    font-size: 2.3em;
-    display: inline-block;
-    margin: 1em auto;
-}
-
-.start-link:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    font-size: 2.7em;
-}
-
 .intro > p {
     font-size: 1.3em;
     line-height: 1.6em;

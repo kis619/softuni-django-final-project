@@ -1,7 +1,7 @@
-<form method="post" action="{% url 'comment_create' thread.id %}">
+<form class="comment-form" method="post" action="{% url 'comment_create' thread.id %}">
     {% csrf_token %}
     <label>
         <textarea name="content" placeholder="Reply"></textarea>
     </label>
-    <input type="submit" value="Join a Thought flow">
+    <input type="submit" value="Reply">
 </form>
