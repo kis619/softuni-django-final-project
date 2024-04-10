@@ -1,13 +1,15 @@
 h2 {
     font-size: 3em;
     text-align: center;
-    font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-style: normal;
     letter-spacing: .3em;
     color: var(--primary-color);
 }
 
+.intro h2 {
+    font-family: "Dancing Script", cursive;
+}
 section {
     text-align: center;
 }
