@@ -7,8 +7,7 @@ UserModel = get_user_model()
 
 class Post(models.Model):
     MAX_TITLE_LENGTH = 200
-    # MIN_CONTENT_LENGTH = 2000 #TODO: restore this
-    MIN_CONTENT_LENGTH = 20
+    MIN_CONTENT_LENGTH = 2000
     MAX_CONTENT_LENGTH = 10000
 
     title = models.CharField(max_length=MAX_TITLE_LENGTH, blank=False)
