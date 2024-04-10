@@ -8,7 +8,8 @@
     </div>
     {% if post.image %}
         <img src="{{ post.image.url }}" alt="{{ post.title }}">
-    {% else %}
-        <img src="{% static 'images/default-avatar.jpg' %}" alt="Default Image">
+        {#    {% else %}#}
+        {#        <img src="{% static 'images/default-avatar.jpg' %}" alt="{{ post.title }}">#}
+        {#    TODO: decide if I want to use this#}
     {% endif %}
 </a>

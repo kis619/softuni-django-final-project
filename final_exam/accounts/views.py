@@ -32,7 +32,7 @@ class ProfileDetailView(DetailView):
     context_object_name = 'profile'
 
     def get_object(self, queryset=None):
-        return self.request.user.letustalkuserprofile
+        return UserModel.objects.get(pk=self.kwargs['pk']).letustalkuserprofile
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -50,7 +50,7 @@ class ProfileUpdateView(LoginRequiredMixin, UpdateView):
         return self.request.user.letustalkuserprofile
 
     def get_success_url(self):
-        return reverse_lazy('profile_detail')
+        return reverse_lazy('profile_detail', kwargs={'pk': self.request.user.pk})
 
 
 class ProfileDeleteView(LoginRequiredMixin, DeleteView):

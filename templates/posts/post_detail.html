@@ -3,23 +3,44 @@
 {% block title %}Post Detail{% endblock title %}
 
 {% block content %}
-    <h2>{{ post.title }}</h2>
-    <p>{{ post.content }}</p>
-    <p>Created at: {{ post.created_at }}</p>
-    <p>Updated at: {{ post.updated_at }}</p>
-    <p>Author: {{ post.author }}</p>
-    <p>Reactions: {{ post.reaction_set.all|length }}</p>
-    <p>Comments: {{ post|total_comments }}</p>
+    <div class="post-details">
+
+        <div class="post-contents background-styles">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content }}</p>
+            {#            {% if post.image %}#}
+            {#                <img class='post-details-img' src="{{ post.image.url }}" alt="{{ post.title }}">#}
+            {#            {% endif %}#}
+            {#            TODO: decide if I want this#}
+
+        </div>
+
+        <div class="meta-metrics-container ">
+            <div class="meta background-styles">
+                {% include 'fragments/_author_posted.html' with user=post.author post=post %}
+            </div>
+            <div class="metrics background-styles">
+                <div>Reactions: {{ post.reaction_set.all|length }}</div>
+                <div>Comments: {{ post|total_comments }}</div>
+            </div>
+        </div>
+
+    </div>
+
     {% if user.is_authenticated %}
         {% include 'reactions/reactions_display.html' with url_name="post_react" id=post.id reactions_count=post_reactions_count %}
-        <h3>Add a Thought</h3>
-        {% include 'threads/thread_form.html' %}
+        <div class="comment-section">
 
-        <h3>Join a thought flow</h3>
-        {% for thread in threads %}
-            {% include 'threads/thread_display.html' %}
-        {% empty %}
-            <p>No threads yet.</p>
-        {% endfor %}
+            <h3>Add a Thought</h3>
+            {% include 'threads/thread_form.html' %}
+
+            <h3>Join a thought flow</h3>
+            {% for thread in threads %}
+                {% include 'threads/thread_display.html' %}
+            {% empty %}
+                <p>No threads yet.</p>
+            {% endfor %}
+        </div>
+
     {% endif %}
 {% endblock content %}

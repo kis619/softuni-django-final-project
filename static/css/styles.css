@@ -4,6 +4,7 @@
     --secondary-color: rgba(215, 229, 211, 0.81);
     --tertiary-color: rgba(243, 248, 243, 0.81);
     --text-color: rgba(92, 77, 77, 0.9);
+    --title-color: rgba(37, 33, 33, 0.9);
 }
 
 body {
@@ -87,6 +88,7 @@ main {
     max-width: 960px;
     color: var(--text-color);
     width: 100%;
+/*    TODO: figure this shit out*/
 }
 
 /* Footer */

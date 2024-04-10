@@ -1,0 +1,5 @@
+{% if user.letustalkuserprofile.first_name or user.letustalkuserprofile.last_name %}
+    {{ user.letustalkuserprofile.first_name }} {{ user.letustalkuserprofile.last_name }}
+{% else %}
+    {{ user.email }}
+{% endif %}

@@ -1,0 +1,70 @@
+.post-details h2 {
+    font-size: 2em;
+    color: var(--title-color);
+    text-align: center;
+}
+
+.post-contents {
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.5;
+
+}
+
+.author-box a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    justify-content: start;
+    color: var(--title-color);
+
+}
+
+.author-box .author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.post-details-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.meta-metrics-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.metrics, .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.metrics div {
+    margin: 0 .8em;
+}
+
+@media (max-width: 768px) {
+    /* Adjust this value based on your design */
+    .meta-metrics-container {
+        flex-direction: column;
+    }
+}
+
+.background-styles {
+    background-color: var(--tertiary-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    padding: .8em;
+    margin-bottom: 1em;
+}

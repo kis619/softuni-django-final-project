@@ -14,7 +14,7 @@ urlpatterns = [
          PasswordChangeDoneView.as_view(template_name='accounts/registration/password_change_done.html'),
          name='password_change_done'),
 
-    path('profile/', ProfileDetailView.as_view(), name='profile_detail'),
+    path('profile/<int:pk>', ProfileDetailView.as_view(), name='profile_detail'),
     path('profile/edit/', ProfileUpdateView.as_view(), name='profile_edit'),
     path('profile/delete/', ProfileDeleteView.as_view(), name='profile_delete'),
 ]
