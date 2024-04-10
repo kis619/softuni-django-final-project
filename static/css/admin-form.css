@@ -1,0 +1,44 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.admin-form {
+    max-width: 20em;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid var(--primary-color);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.admin-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.admin-form button  {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+a.admin-form-button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+.admin-form button:hover {
+    background-color: var(--secondary-color);
+}
+

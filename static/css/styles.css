@@ -14,6 +14,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--tertiary-color);
+    align-items: center;
+
 }
 
 /*------------------------------------------------------------------*/
@@ -84,10 +86,10 @@ main {
     padding: 1.5em;
     background-color: var(--secondary-color);
     flex-grow: 1;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     max-width: 960px;
     color: var(--text-color);
-    width: 100%;
+    /*width: 100%;*/
     /*    TODO: figure this shit out*/
 }
 
@@ -121,16 +123,8 @@ footer {
 
 
 /*General other*/
-.responsive-image {
-    min-width: 24px;
-    min-height: 24px;
-    max-width: 100px;
-    max-height: 100px;
-    width: auto;
-    height: auto;
-}
 
-.talk-button {
+.growing-button {
     background-color: var(--primary-color);
     color: white;
     font-size: 2.3em;
@@ -142,15 +136,36 @@ footer {
     margin: 1em auto;
 }
 
-.talk-button:hover {
+.growing-button:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     font-size: 2.7em;
 }
 
 
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.category {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.data {
+    color: var(--title-color);
+    font-weight: bold;
+}
+
+
+
+
 @media screen and (max-width: 700px) {
     main {
-        width: revert;
+        /*width: revert;*/
+        /*max-width: 300px;*/
     }
 }

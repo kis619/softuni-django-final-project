@@ -7,34 +7,41 @@
 {% block title %}Profile{% endblock title %}
 
 {% block content %}
-    <h2>Profile Details</h2>
-    <a href="{% url 'profile_edit' %}">Edit</a>
-    <a href="{% url 'profile_delete' %}">Delete</a>
-    <p>Email: {{ profile.user.email|default:"Not provided" }}</p>
-    <p>First Name: {{ profile.first_name|default:"Not provided" }}</p>
-    <p>Last Name: {{ profile.last_name|default:"Not provided" }}</p>
-    <p>Avatar:
+    <div class="profile-page">
+        <h2>Profile Details</h2>
         <img src="{{ profile.get_avatar_url }}" class="responsive-image" alt="Avatar"/>
-    </p>
-    <p>Bio: {{ profile.bio|default:"Not provided" }}</p>
-    <p>Birth Date: {{ profile.birth_date|default:"Not provided" }}</p>
 
-    <div>
-        <h3>Posts</h3>
-        {% for post in posts %}
 
-            <div class="post">
-                <h4>{{ post.title }}</h4>
-                {#                <p>{{ post.content }}</p>#}
-                <p>Created at: {{ post.created_at }}</p>
-                <p>Updated at: {{ post.updated_at }}</p>
-                <p>Author: {{ post.author }}</p>
-                <p>Tags: {{ post.tags.all|join:", " }}</p>
-                <p>Comments: {{ post.comments.all|length }}</p>
-                <p>Likes: {{ post.likes.all|length }}</p>
-                <a href="{% url 'post_detail' post.id %}">Go to Post</a>
-                <a href="{% url 'post_delete' post.id %}">Delete</a>
+        {% include 'fragments/_category_info.html' with category='Email' data=profile.user.email %}
+        {% include 'fragments/_category_info.html' with category='First Name' data=profile.first_name %}
+        {% include 'fragments/_category_info.html' with category='Last Name' data=profile.last_name %}
+        {% include 'fragments/_category_info.html' with category='Bio' data=profile.bio %}
+        {% include 'fragments/_category_info.html' with category='Birth Date' data=profile.birth_date %}
+        {% if user == profile.user %}
+            <div>
+                <a href="{% url 'profile_edit' %}" class="profile-link">Edit</a>
+                <a href="{% url 'profile_delete' %}" class="profile-link">Delete</a>
             </div>
-        {% endfor %}
+        {% endif %}
     </div>
+    <hr>
+    <div>
+        <h2>Posts</h2>
+        <div class="profile-posts">
+            {% for post in posts %}
+                <div class="card-or-remove">
+                    <a href="{% url 'post_detail' post.id %}">
+                        {% include 'posts/post_card.html' %}
+                    </a>
+
+                    {% if user == profile.user %}
+                        <a href="{% url 'post_delete' post.id %}" class="delete-button"><i
+                                class="fas fa-trash fa-2x"></i></a>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+    {#    TODO: if time add a button to all posts by this person#}
 {% endblock content %}

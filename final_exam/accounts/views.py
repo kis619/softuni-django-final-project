@@ -36,7 +36,7 @@ class ProfileDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['posts'] = self.request.user.post_set.all()
+        context['posts'] = self.get_object().user.post_set.all()
         return context
 
 

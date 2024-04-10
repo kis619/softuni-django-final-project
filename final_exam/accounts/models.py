@@ -30,7 +30,7 @@ class LetUsTalkUserProfile(models.Model):
     )
     first_name = models.CharField(max_length=FIRST_NAME_MAX_LENGTH, null=True, blank=True)
     last_name = models.CharField(max_length=LAST_NAME_MAX_LENGTH, null=True, blank=True)
-    avatar = models.ImageField(upload_to='avatars/', null=True, blank=True)  # TODO: img vs url field
+    avatar = models.ImageField(upload_to='avatars/', default='avatars/default-avatar.jpg', null=True, blank=True)  # TODO: img vs url field
     bio = models.TextField(null=True, blank=True)
     birth_date = models.DateField(null=True, blank=True)
 
