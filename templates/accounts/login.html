@@ -9,7 +9,16 @@
     <form class="admin-form" method="post">
         {% csrf_token %}
         {{ form.username|placeholder:"Email" }}
+        {% if form.username.errors %}
+            <div class="error">{{ form.username.errors }}</div>
+        {% endif %}
         {{ form.password|placeholder:"Password" }}
+        {% if form.password.errors %}
+            <div class="error">{{ form.password.errors }}</div>
+        {% endif %}
         <button type="submit">Login</button>
     </form>
+    {% if form.non_field_errors %}
+        <div class="errorl">{{ form.non_field_errors }}</div>
+    {% endif %}
 {% endblock %}

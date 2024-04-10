@@ -9,22 +9,22 @@
     gap: 1em;
 }
 
-.errorlist {
-    /*display: none;*/
-    padding: 0;
-    list-style-type: none;
-    margin: 0;
-}
+/*.errorlist {*/
+/*    !*display: none;*!*/
+/*    padding: 0;*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*}*/
 
-.errorlist li {
-    background-color: #f2dede;
-    color: #a94442;
-    border: 1px solid #ebccd1;
-    border-radius: 4px;
-    padding: 5px 10px;
-    margin-bottom: 10px;
-    font-size: 0.9em;
-}
+/*.errorlist li {*/
+/*    background-color: #f2dede;*/
+/*    color: #a94442;*/
+/*    border: 1px solid #ebccd1;*/
+/*    border-radius: 4px;*/
+/*    padding: 5px 10px;*/
+/*    margin-bottom: 10px;*/
+/*    font-size: 0.9em;*/
+/*}*/
 
 
 .new-post-form input {
