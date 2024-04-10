@@ -37,6 +37,4 @@ class ReactionCreateView(CreateView):
         post_id = self.kwargs.get('post_id') or get_post_id_from_comment_id(self.kwargs.get('comment_id'))
         return reverse('post_detail', args=[post_id])
 
-
-#TODO: not refresh when reacting to a thread??
-# TODO: add a reaction count for comments
+# TODO: not refresh when reacting to a thread??
