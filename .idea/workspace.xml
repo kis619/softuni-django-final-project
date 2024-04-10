@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef332e7a-0011-4f49-be7b-247ed3879e50" name="Changes" comment="added post delete&#10;added tests for the post delete view;&#10;added post detail">
-      <change afterPath="$PROJECT_DIR$/final_exam/posts/management/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ef332e7a-0011-4f49-be7b-247ed3879e50" name="Changes" comment="added post delete&#10;added tests for the post delete view;&#10;added post detail" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,11 +80,11 @@
       <recent name="$PROJECT_DIR$/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/final_exam/accounts" />
       <recent name="$PROJECT_DIR$/templates/fragments/_author_box.html" />
       <recent name="$PROJECT_DIR$/final_exam" />
       <recent name="$PROJECT_DIR$/final_exam/posts/tests/integration" />
       <recent name="$PROJECT_DIR$/static/images" />
-      <recent name="$PROJECT_DIR$/templates/home" />
     </key>
   </component>
   <component name="RunManager" selected="Django Server.softuni-django-final-project">
@@ -317,6 +314,16 @@
           <url>file://$PROJECT_DIR$/final_exam/posts/views.py</url>
           <line>25</line>
           <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/final_exam/accounts/management/commands/setupgroups.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/final_exam/accounts/management/commands/setupgroups.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="108" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
