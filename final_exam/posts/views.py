@@ -3,6 +3,7 @@ from django.http import HttpResponseForbidden
 from django.urls import reverse_lazy
 from django.views.generic import ListView, CreateView, DeleteView, DetailView
 
+from utils import add_reactions_to_threads
 from .form import PostForm
 from .models import Post
 from ..reactions.models import Reaction
@@ -33,18 +34,7 @@ class PostDetailView(DetailView):
             context['user_reactions'] = {reaction: True for reaction in user_reactions}
 
             threads = post.thread_set.all()
-            for thread in threads:
-                comments = thread.comment_set.all()
-                for comment in comments:
-                    comment_reactions = Reaction.objects.filter(comment=comment, users=self.request.user).values_list(
-                        'reaction_type', flat=True)
-                    comment.user_reactions = {reaction: True for reaction in comment_reactions}
-
-                    comment_reactions = Reaction.objects.filter(comment=comment).values('reaction_type').annotate(
-                        count=Count('id'))
-                    comment.reactions_count = {reaction['reaction_type']: reaction['count'] for reaction in
-                                               comment_reactions}
-                thread.comments = comments
+            add_reactions_to_threads(threads, self.request.user)
             context['threads'] = threads
         return context
 

@@ -2,6 +2,10 @@
     border: 1px solid #ddd;
 }
 
+.thread * {
+    line-break: anywhere;
+}
+
 .thread-title {
     font-size: 1.3em;
     color: var(--title-color);
