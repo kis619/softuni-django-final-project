@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef332e7a-0011-4f49-be7b-247ed3879e50" name="Changes" comment="added post delete&#10;added tests for the post delete view;&#10;added post detail">
+      <change afterPath="$PROJECT_DIR$/final_exam/accounts/management/commands/wait_for_db.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/posts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_exam/threads/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/threads/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/post_details.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/post_details.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/reactions.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/reactions.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/threads.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/threads.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/posts/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/posts/post_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_exam/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_exam/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +48,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.softuni-django-final-project.executor": "Debug",
+    "Django Server.softuni-django-final-project.executor": "Run",
     "Django tests.Test: final_exam.posts.tests.integration.executor": "Run",
     "Python tests.Python tests for posts.tests.TestPostDeleteView.test_returns_HttpResponseForbidden_if_user_is_not_author.executor": "Run",
     "Python tests.Python tests for posts.tests.TestPostDeleteView.test_returns_HttpResponseNotFound_if_post_does_not_exist.executor": "Run",
@@ -65,7 +62,7 @@
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "fixes",
-    "last_opened_file_path": "/home/krissi/projects/softuni-django-final-project/final_exam",
+    "last_opened_file_path": "/home/krissi/Work/turbit",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -272,6 +269,7 @@
       <workItem from="1712586806796" duration="27321000" />
       <workItem from="1712657410724" duration="34000" />
       <workItem from="1712657556291" duration="43896000" />
+      <workItem from="1713042703147" duration="12261000" />
     </task>
     <task id="LOCAL-00001" summary="Added Profile details View">
       <option name="closed" value="true" />
@@ -339,6 +337,11 @@
           <url>file://$PROJECT_DIR$/final_exam/threads/views.py</url>
           <line>58</line>
           <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/final_exam/settings.py</url>
+          <line>130</line>
+          <option name="timeStamp" value="129" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
