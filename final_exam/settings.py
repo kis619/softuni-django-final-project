@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 import os
 from pathlib import Path
 
-import dj_database_url
 from django.urls import reverse_lazy
 from dotenv import load_dotenv
 
@@ -28,8 +27,9 @@ load_dotenv(dotenv_path)
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-ALLOWED_HOSTS = ["*"]  # TODO: change to actual domain
+DEBUG = True
+
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -84,12 +84,8 @@ WSGI_APPLICATION = 'final_exam.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('RENDER_DB_NAME'),
-        'USER': os.environ.get('RENDER_DB_USER'),
-        'PASSWORD': os.environ.get('RENDER_DB_PASSWORD'),
-        'HOST': os.environ.get('RENDER_DB_HOST'),
-        'PORT': os.environ.get('RENDER_DB_PORT'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -111,6 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
@@ -128,10 +125,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
-    os.path.join(BASE_DIR, 'media'),
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 MEDIA_URL = '/media/'

@@ -33,12 +33,12 @@
 
 .profile-page .responsive-image {
     border-radius: 50%;
-    min-width: 100px;
-    min-height: 100px;
+    width: 25vw;
+    height: 25vw;
+    object-fit: cover;
     max-width: 300px;
     max-height: 300px;
-    width: auto;
-    height: auto;
+    border: 3px solid var(--primary-color);
 }
 
 .card-or-remove {
